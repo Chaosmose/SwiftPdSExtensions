@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Azurgate. All rights reserved.
 //
 
-extension NSURL {
+public extension NSURL {
     
     // IOS7 support
-    func queryStringDictionary() -> Dictionary<String, String>? {
+    public func queryStringDictionary() -> Dictionary<String, String>? {
         var results = [String:String]()
         let keyValues = self.query?.componentsSeparatedByString("&")
         if keyValues?.count > 0 {
