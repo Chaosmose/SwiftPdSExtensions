@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Azurgate. All rights reserved.
 //
 
-public extension NSURL {
+public extension URL {
     
     // IOS7 support
     public func queryStringDictionary() -> Dictionary<String, String>? {
         var results = [String:String]()
-        let keyValues = self.query?.componentsSeparatedByString("&")
-        if keyValues?.count > 0 {
+        let keyValues = self.query?.components(separatedBy: "&")
+        if (keyValues?.count)! > 0 {
             for pair in keyValues! {
-                let kv = pair.componentsSeparatedByString("=")
+                let kv = pair.components(separatedBy: "=")
                 if kv.count > 1 {
                     results.updateValue(kv[1], forKey: kv[0])
                 }

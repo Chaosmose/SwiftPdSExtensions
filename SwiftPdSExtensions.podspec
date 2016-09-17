@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'SwiftPdSExtensions'
-  s.version     = '1.0'
+  s.version     = '3.0'
   s.authors     = { 'Benoit Pereira da Silva' => 'benoit@pereira-da-silva.com' }
   s.homepage    = 'https://github.com/Chaosmose/SwiftPdSExtensions'
   s.summary     = 'Future extensions to be shared between projects'
