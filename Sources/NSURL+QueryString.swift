@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Azurgate. All rights reserved.
 //
 
+import Foundation
+
 public extension URL {
     
     // IOS7 support
